@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package task_manager;
+
+option go_package = "github.com/jasi3110/proto_project/protocol_buffer";
+
+message Task {
+    int64 id = 1;
+    string title = 2;
+    string description = 3;
+    bool completed = 4;
+}
